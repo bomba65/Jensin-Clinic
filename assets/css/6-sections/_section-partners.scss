@@ -1,0 +1,48 @@
+.section-partners {
+  padding: 80px 0;
+
+  span {
+    color: #fff;
+    padding: 1.2rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #217DD1;
+    z-index: 100;
+    top: 33%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  span:hover {
+    background-color: #1160a9;
+  }
+  .icon-arrow-left {
+    left: -4rem;
+  }
+  .icon-arrow-right {
+    right: -4rem;
+  }
+  .partners {
+  }
+  .partner {
+    margin: 10px;
+    img {
+      max-height: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .section-partners {
+    span {
+      top: inherit;
+      bottom: -40px;
+    }
+    .icon-arrow-left {
+      left: 25%;
+    }
+    .icon-arrow-right {
+      right: 25%;
+    }
+  }
+}

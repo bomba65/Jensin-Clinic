@@ -1,0 +1,52 @@
+.section-reviews {
+  padding: 80px 0;
+  span {
+    color: #fff;
+    padding: 1.2rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #217DD1;
+    z-index: 100;
+    top: 30%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  span:hover {
+    background-color: #1160a9;
+  }
+  .icon-arrow-left {
+    left: -4rem;
+  }
+  .icon-arrow-right {
+    right: -4rem;
+  }
+  .review-container {
+    border: 1px solid $lightgray;
+    box-shadow: 0 1px 3px rgba(0,0,0,.05);
+    padding: 50px 25px;
+    margin: 1rem 0;
+    h3 {
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .section-reviews {
+    span {
+      top: inherit;
+      bottom: -40px;
+    }
+    .icon-arrow-left {
+      left: 25%;
+    }
+    .icon-arrow-right {
+      right: 25%;
+    }
+  }
+}

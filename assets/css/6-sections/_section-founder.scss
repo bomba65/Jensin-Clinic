@@ -1,0 +1,19 @@
+.section-founder {
+  background: #7F3635;
+  position: relative;
+  padding: 80px 0;
+  &:before {
+    content: '';
+    display: block;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    position: absolute;
+    background: url($path-image + '/logo_background_black.png') center no-repeat;
+    background-size: contain;
+  }
+  .container {
+    position: relative;
+  }
+}

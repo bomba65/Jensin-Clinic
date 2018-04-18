@@ -1,0 +1,258 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+  nav {
+    .nav-head {
+      .nav-logo {
+        p {display: none;}
+      }
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  header {
+    .top-bar {
+      .lang-icons {
+        li:first-child{display: none;}
+      }
+    }
+
+
+    nav {
+      .nav-head {
+        .nav-logo {
+          p {display: block;}
+        }
+        span:first-child {display: block;}
+      }
+      .nav-body {
+        padding: 0;
+        display: none;
+        right: inherit;
+        position: inherit;
+        ul {
+          display: block;
+
+          a li {
+            border-right: 0;
+            border-bottom: 1px solid #EEE;
+            padding: 1rem 0;
+          }
+
+          a:last-child li {
+            border: 0;
+          }
+        }
+      }
+
+    }
+  }
+
+  .section-main {
+    .container {
+      .jumbotron {
+        .thin-italic {
+          margin: 0;
+        }
+        ul {
+          font-size: 1.5rem;
+        }
+        ul {margin: 2rem auto;}
+        ul:nth-of-type(2) {margin-top: 0}
+      }
+    }
+  }
+
+  .section-features {
+    .features {
+      flex-wrap: wrap;
+      .feature {
+        width: 50%;
+      }
+    }
+  }
+
+
+    .section-speciality {
+      .specialities {
+        flex-wrap: wrap;
+        .speciality {
+          width: 50%;
+        }
+      }
+
+      .speciality-hidden {
+        ul {
+          li {
+            width: 47%;
+          }
+        }
+
+        .speciality-hidden-links {
+          li {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    .section-four-steps {
+      .four-steps {
+        flex-wrap: wrap;
+        .four-step {
+          width: 50%;
+        }
+      }
+    }
+
+    .section-offers {
+      .offers {
+        flex-wrap: wrap;
+        .offer {
+          width: 100%;
+          ul {
+            min-height: auto;
+            margin-bottom: 3rem;
+          }
+          p {
+            min-height: inherit;
+            margin-bottom: 2rem;
+            max-width: 40rem;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+
+        .offer:first-child {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  header .top-bar {
+    .lang-icons {display: none;}
+    .contacts {
+      float: left;
+      li { display: none;}
+      li:first-child { display: block;}
+    }
+  }
+
+  .section-main {
+    .container {
+      .jumbotron {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .section-speciality {
+    .speciality-hidden {
+      ul {
+        li {
+        }
+      }
+      .speciality-hidden-links {
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .whats_tel {
+    display: block;
+  }
+
+  footer {
+    margin-bottom: 65px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  header {
+    nav {
+      .nav-head {
+        .nav-logo {
+          p {display: none;}
+        }
+      }
+    }
+  }
+
+.section-speciality  .btn-tranparent {
+    font-size: 1rem;
+  }
+
+  .section-main .container {
+    padding: 3rem 2rem;
+  }
+
+  .section-features {
+    .features {
+      flex-wrap: wrap;
+      .feature {
+        .feature-icon {
+          height: 10rem;
+          width: 10rem;
+        }
+        span {
+          padding: 2.8rem;
+        }
+        padding: 2rem 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .section-speciality {
+    .specialities {
+      .speciality {
+        .speciality-icon {
+          height: 10rem;
+          width: 10rem;
+        }
+        span {
+          padding: 2.8rem;
+        }
+        padding: 2rem 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .section-four-steps {
+    .four-steps {
+      flex-wrap: wrap;
+      .four-step {
+        .four-step-icon {
+          height: 10rem;
+          width: 10rem;
+        }
+        span {
+          padding: 2.8rem;
+        }
+        padding: 2rem 0;
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

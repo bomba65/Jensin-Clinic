@@ -1,0 +1,18 @@
+.section-form {
+  padding: 80px 0;
+  background: url($path-image + '/bg_1.png');
+  color: $white;
+  .discount-counter {
+      font-size: 4rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      line-height: auto;
+      text-align: center;
+  }
+  .discount-counter span {
+      font-size: 40%;
+      line-height: 180%;
+      display: inline-block;
+      vertical-align: text-top;
+  }
+}

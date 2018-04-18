@@ -1,0 +1,15 @@
+input.form-control {
+  font-size: 1.4rem;
+  padding: 1.8rem 2rem;
+  border-color: rgba($black, 0.3);
+}
+.form-group {
+  margin: 2rem 0;
+}
+input.form-control::placeholder {
+  color: $mediumgrey;
+}
+.hr {
+  height: 25px;
+  background: url($path-image + '/pattern.png');
+}

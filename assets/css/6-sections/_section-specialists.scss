@@ -1,0 +1,90 @@
+.section-specialists {
+  padding: 80px 0;
+  background: $lightergray;
+  h2 {
+    text-align: center;
+  }
+
+  span {
+    color: #fff;
+    padding: 1.2rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #217DD1;
+    z-index: 100;
+    top: 30%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  span:hover {
+    background-color: #1160a9;
+  }
+  .icon-arrow-left {
+    left: -4rem;
+  }
+  .icon-arrow-right {
+    right: -4rem;
+  }
+
+  .specialist-container {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    @include media-breakpoint-up(sm) {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @include media-breakpoint-up(md) {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+    @include media-breakpoint-up(lg) {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    margin-bottom: 30px;
+  }
+  .specialist-image {
+    width: 100%;
+    height: 320px;
+    border: 6px solid $blue-new;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+  }
+  .specialist-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .specialist-subtitle {
+    font-size: 1.2rem;
+    color: $red;
+    font-style: italic;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .section-specialists {
+    span {
+      top: inherit;
+      bottom: -20px;
+    }
+    .icon-arrow-left {
+      left: 25%;
+    }
+    .icon-arrow-right {
+      right: 25%;
+    }
+  }
+}

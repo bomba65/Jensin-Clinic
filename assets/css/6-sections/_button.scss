@@ -1,0 +1,15 @@
+form {
+  .btn-primary {
+    max-width: 100%;
+    white-space: normal;
+    @include media-breakpoint-only(lg) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,174 @@
+/* Base Styles -------------------- */
+
+html {
+  font-size: 10px;
+}
+body {
+  color: #404040;
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    height: 0;
+    clear: both;
+    content: '.';
+    display: block;
+    visibility: hidden;
+}
+
+/* REUSABLE COMPONENTS */
+
+.main-container {
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+hr { margin: 0; }
+
+
+a {
+    color: #666;
+    transition: color 0.3s;
+}
+
+a.active {
+    color: $red;
+}
+
+a:hover {
+    color: $red;
+    text-decoration: none;
+}
+
+/* HEADINGS */
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: $red;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+/* Inputs */
+
+input {
+    border-radius: 3px;
+    padding: 12px 15px;
+    border: 1px solid #cecece;
+}
+
+.hr {
+  background-image: url(../img/pattern.png);
+  height: 25px;
+}
+
+::placeholder {
+    color: #cecece;
+}
+
+/* BUTTONS */
+
+.btn-primary {font-size: 1.6rem; padding: 1rem 3rem;}
+
+
+
+
+/* ----- FONTS ----- */
+
+//Trebuchet-MS - Regular (400)
+@font-face {
+  font-family: 'Trebuchet-MS';
+  src: url($path-fonts + '/Trebuchet-MS/Trebuchet-MS-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+//Trebuchet-MS - Bold (700)
+@font-face {
+  font-family: 'Trebuchet-MS';
+  src: url($path-fonts + '/Trebuchet-MS/Trebuchet-MS-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+//Montserrat - Regular (400)
+@font-face {
+  font-family: 'Montserrat';
+  src: url($path-fonts + '/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+//Montserrat - ExtraLight (200)
+@font-face {
+  font-family: 'Montserrat';
+  src: url($path-fonts + '/Montserrat/Montserrat-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+//Montserrat - Normal Italic (400)
+@font-face {
+  font-family: 'Montserrat';
+  src: url($path-fonts + '/Montserrat/Montserrat-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+//Montserrat - Medium (500)
+@font-face {
+  font-family: 'Montserrat';
+  src: url($path-fonts + '/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+//Montserrat - SemiBold (600)
+@font-face {
+  font-family: 'Montserrat';
+  src: url($path-fonts + '/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+//Montserrat - Bold (700)
+@font-face {
+  font-family: 'Montserrat';
+  src: url($path-fonts + '/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+//Montserrat - ExtraBold (800)
+@font-face {
+  font-family: 'Montserrat';
+  src: url($path-fonts + '/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url($path-fonts + '/icons/icomoon.eot?vmv2ux');
+  src:  url($path-fonts + '/icons/icomoon.eot?vmv2ux#iefix') format('embedded-opentype'),
+    url($path-fonts + '/icons/icomoon.ttf?vmv2ux') format('truetype'),
+    url($path-fonts + '/icons/icomoon.woff?vmv2ux') format('woff'),
+    url($path-fonts + '/icons/icomoon.svg?vmv2ux#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@import "../../fonts/icons/icomoon";

@@ -1,0 +1,44 @@
+.section-faq {
+  background: #7F3635;
+  padding: 80px 0;
+  .question-container {
+    padding-left: 30px;
+    position: relative;
+    margin: 20px 0;
+    color: $white;
+    $animation-speed: 300ms;
+    .arrow-container {
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30px;
+      span {
+        display: inline-block;
+        transform: rotate(0deg);
+        transition: transform $animation-speed;
+      }
+    }
+    .question {
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    .answer {
+      color: $lightyellow;
+      transform: scaleY(1);
+      transform-origin: top;
+      height: auto;
+      font-size: 1.6rem;
+      transition: transform $animation-speed;
+    }
+    &.scrolled {
+      .arrow-container span {
+        transform: rotate(180deg);
+      }
+      .answer {
+        transform: scaleY(0);
+        height: 0;
+      }
+    }
+  }
+}
